@@ -24,4 +24,10 @@
 
 AudioRecorder 录音声音数据从音频硬件中被读出，编码格式为 PCM格式，但 PCM语音数据，如果保存成音频文件，是不能够被播放器播放的，所以必须先写代码实现数据编码以及压缩。下面实现 PCM 语音数据转为 WAV 文件。
 
+
+
+zack
+
+
+
 总结：AudioRecorder 录音相比较 MediaRecorder 使用起来会麻烦一些，但优点也是显而易见的，AudioRecorder 录音时直接操纵硬件获取音频流数据，该过程是实时处理，可以用代码实现各种音频的封装，同时也可实现暂停功能，关于实现暂停录音功能今天在这里就不赘述了，推荐大家阅读 imhxl 博主的分享 http://blog.csdn.net/imhxl/article/details/52190451 。
